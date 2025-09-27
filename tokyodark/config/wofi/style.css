@@ -1,0 +1,80 @@
+/* Main window */
+window {
+    margin: 0px;
+    border: 1px solid #d7a65f;
+    background-color: #11121d;
+    /* border-radius: 10px; */
+    font-family: "JetBrains Mono Nerd Font", monospace;
+    font-size: 14px;
+}
+
+/* Search input */
+#input {
+    margin: 5px;
+    /* border: 1px solid #1a1b2c; */
+    color: #A0A8CD;
+    background-color: #1a1b2c;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+#input:focus {
+    border: 1px solid #EE6D85;
+}
+
+#input image { 
+    /* color: rgba(0,0,0,0);  */
+    color: #A0A8CD;
+    margin: 0 16px 0 8px;
+}
+
+/* Outer box containing results */
+#outer-box {
+    padding: 0 0 5px 0;
+    margin: 5px;
+    border: none;
+    background-color: transparent;
+}
+
+/* Inner box containing results */
+#inner-box {
+    margin: 5px;
+    border: none;
+    background-color: transparent;
+}
+
+/* Scrolled window */
+#scroll {
+    margin: 0px;
+    border: none;
+    background-color: transparent;
+}
+
+/* Individual entries */
+#entry {
+    margin: 2px;
+    border: none;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #A0A8CD;
+    padding: 8px;
+}
+
+/* Hovered entry */
+#entry:selected {
+    background-color: #F6955B;
+    color: #11121d;
+}
+
+/* Entry text */
+#text {
+    margin: 5px;
+    border: none;
+    color: inherit;
+    font-size: 14px;
+}
+
+/* Application icons */
+#img {
+    margin-right: 12px;
+}

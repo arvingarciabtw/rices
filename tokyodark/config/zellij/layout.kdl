@@ -1,0 +1,16 @@
+layout {
+    pane split_direction="vertical" {
+        pane command="nvim"
+        pane split_direction="horizontal" {
+            pane command="htop" size="30%"
+            pane size="70%" split_direction="horizontal" stacked=true {
+                pane
+                pane
+                pane command="lazygit"
+            }
+        }
+    }
+    pane size=1 borderless=true {
+        plugin location="zellij:status-bar"
+    }
+}
