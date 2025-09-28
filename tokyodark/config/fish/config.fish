@@ -2,7 +2,7 @@ if status is-interactive
     # Commands to run in interactive sessions can go here
 end
 
-oh-my-posh init fish --config $HOME/.poshthemes/huvix.omp.json | source
+oh-my-posh init fish --config ~/programming/repositories/rices/tokyodark/config/poshthemes/huvix.omp.json | source
 
 set -gx EDITOR nvim
 
