@@ -18,6 +18,8 @@ sudo pacman -S hyprland dunst fish fontconfig ghostty nvim waybar wofi zellij oh
 
 # Create the symlinks (make sure ~/.config exists)
 mkdir -p ~/.config
+
+# ln -sf [file path where you cloned the repo] ~/.config/[thing to be configured]
 ln -sf ~/dotfiles/config/hypr ~/.config/hypr
 ln -sf ~/dotfiles/config/dunst ~/.config/dunst
 ln -sf ~/dotfiles/config/fish ~/.config/fish
@@ -26,6 +28,7 @@ ln -sf ~/dotfiles/config/ghostty ~/.config/ghostty
 ln -sf ~/dotfiles/config/nvim ~/.config/nvim
 ln -sf ~/dotfiles/config/waybar ~/.config/waybar
 ln -sf ~/dotfiles/config/wofi ~/.config/wofi
+ln -sf ~/dotfiles/config/yazi ~/.config/yazi
 ln -sf ~/dotfiles/config/zellij ~/.config/zellij
 ```
 
