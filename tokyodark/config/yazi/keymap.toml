@@ -1,0 +1,4 @@
+[[mgr.prepend_keymap]]
+on = [ "z" ]
+run = 'shell "fish -c zel1" --block --confirm'
+desc = "Execute zel1 alias"
