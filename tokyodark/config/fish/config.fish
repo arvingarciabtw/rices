@@ -7,3 +7,10 @@ oh-my-posh init fish --config ~/programming/repositories/rices/tokyodark/config/
 set -gx EDITOR nvim
 
 alias zel1="zellij --layout ~/.config/zellij/layout.kdl"
+
+# pnpm
+set -gx PNPM_HOME "/home/arvingarcia/.local/share/pnpm"
+if not string match -q -- $PNPM_HOME $PATH
+  set -gx PATH "$PNPM_HOME" $PATH
+end
+# pnpm end
