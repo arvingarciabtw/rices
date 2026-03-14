@@ -1,0 +1,89 @@
+@define-color color-bg #101010;
+@define-color color-fg #ffffff;
+@define-color color-accent #d6b771;
+@define-color color-gray-900 #222222;
+@define-color color-gray-800 #2e2e2e;
+@define-color color-gray-700 #3a3a3a;
+@define-color color-gray-600 #484848;
+@define-color color-gray-500 #555555;
+@define-color color-gray-400 #636363;
+
+/* Main window */
+window {
+  margin: 0px;
+  border: 1px solid @color-gray-500;
+  background-color: @color-bg;
+  font-family: "CommitMono Nerd Font", sans-serif;
+  font-size: 14px;
+}
+
+/* Search input */
+#input {
+  margin: 5px;
+  color: @color-fg;
+  background-color: @color-bg;
+  border-radius: 5px;
+  padding: 8px;
+}
+
+#input:focus {
+  border: 1px solid @color-accent;
+}
+
+#input image {
+  /* color: rgba(0,0,0,0);  */
+  color: @color-gray-400;
+  margin: 0 16px 0 8px;
+}
+
+/* Outer box containing results */
+#outer-box {
+  padding: 0 0 5px 0;
+  margin: 5px;
+  border: none;
+  background-color: transparent;
+}
+
+/* Inner box containing results */
+#inner-box {
+  margin: 5px;
+  border: none;
+  background-color: transparent;
+}
+
+/* Scrolled window */
+#scroll {
+  margin: 0px;
+  border: none;
+  background-color: transparent;
+}
+
+/* Individual entries */
+#entry {
+  margin: 2px;
+  border: none;
+  border-radius: 5px;
+  background-color: transparent;
+  color: @color-gray-700;
+  padding: 8px;
+}
+
+/* Hovered entry */
+#entry:selected {
+  background-color: @color-gray-800;
+  color: @color-bg;
+}
+
+/* Entry text */
+#text {
+  margin: 5px;
+  border: none;
+  color: inherit;
+  font-size: 14px;
+  font-family: "CommitMono Nerd Font", sans-serif;
+}
+
+/* Application icons */
+#img {
+  margin-right: 12px;
+}

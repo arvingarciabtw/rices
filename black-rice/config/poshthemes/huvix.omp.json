@@ -1,0 +1,70 @@
+{
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "blocks": [
+    {
+      "alignment": "left",
+      "segments": [
+        {
+          "foreground": "#999999",
+          "style": "plain",
+          "template": "@{{ .UserName }} <#50585d>\u279c</>",
+          "type": "session"
+        },
+        {
+          "foreground": "#696969",
+          "properties": {
+            "style": "agnoster_short"
+          },
+          "style": "plain",
+          "template": " {{ .Path }} ",
+          "type": "path"
+        },
+        {
+          "foreground": "#50585d",
+          "properties": {
+            "branch_icon": ""
+          },
+          "style": "plain",
+          "template": "git<#ffffff>(</>{{ .HEAD }}<#ffffff>)</> ",
+          "type": "git"
+        },
+        {
+          "foreground": "#50585d",
+          "properties": {
+            "always_enabled": false,
+            "style": "austin",
+            "threshold": 100
+          },
+          "style": "plain",
+          "template": " {{ .FormattedMs }}",
+          "type": "executiontime"
+        }
+      ],
+      "type": "prompt"
+    },
+    {
+      "alignment": "left",
+      "newline": true,
+      "segments": [
+        {
+          "foreground": "#50585d",
+          "foreground_templates": [
+            "{{if eq \"Charging\" .State.String}}#ffffff{{end}}",
+            "{{if eq \"Discharging\" .State.String}}#696969{{end}}"
+          ],
+          "properties": {
+            "charged_icon": "\ue22f ",
+            "charging_icon": "\ue234 ",
+            "discharging_icon": "\ue231 "
+          },
+          "style": "plain",
+          "template": "[{{ if not .Error }}{{ .Icon }}{{ .Percentage }}{{ end }}\uf295]",
+          "type": "battery"
+        }
+      ],
+      "type": "prompt"
+    }
+  ],
+  "final_space": true,
+  "version": 3
+}
